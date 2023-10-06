@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC5BDB1C2ACFE5CA001C3BBB /* MyAHGAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */; };
+		AC5BDB1E2ACFE5CA001C3BBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB1D2ACFE5CA001C3BBB /* ContentView.swift */; };
+		AC5BDB202ACFE5CC001C3BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */; };
+		AC5BDB232ACFE5CC001C3BBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5BDB222ACFE5CC001C3BBB /* Preview Assets.xcassets */; };
+		AC5BDB2D2ACFE5CC001C3BBB /* MyAHGAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB2C2ACFE5CC001C3BBB /* MyAHGAppTests.swift */; };
+		AC5BDB372ACFE5CC001C3BBB /* MyAHGAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB362ACFE5CC001C3BBB /* MyAHGAppUITests.swift */; };
+		AC5BDB392ACFE5CC001C3BBB /* MyAHGAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB382ACFE5CC001C3BBB /* MyAHGAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC5BDB292ACFE5CC001C3BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5BDB102ACFE5CA001C3BBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5BDB172ACFE5CA001C3BBB;
+			remoteInfo = MyAHGApp;
+		};
+		AC5BDB332ACFE5CC001C3BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5BDB102ACFE5CA001C3BBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5BDB172ACFE5CA001C3BBB;
+			remoteInfo = MyAHGApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC5BDB182ACFE5CA001C3BBB /* MyAHGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAHGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAHGAppApp.swift; sourceTree = "<group>"; };
+		AC5BDB1D2ACFE5CA001C3BBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC5BDB222ACFE5CC001C3BBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC5BDB282ACFE5CC001C3BBB /* MyAHGAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAHGAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5BDB2C2ACFE5CC001C3BBB /* MyAHGAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAHGAppTests.swift; sourceTree = "<group>"; };
+		AC5BDB322ACFE5CC001C3BBB /* MyAHGAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAHGAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5BDB362ACFE5CC001C3BBB /* MyAHGAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAHGAppUITests.swift; sourceTree = "<group>"; };
+		AC5BDB382ACFE5CC001C3BBB /* MyAHGAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAHGAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC5BDB152ACFE5CA001C3BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5BDB252ACFE5CC001C3BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5BDB2F2ACFE5CC001C3BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC5BDB0F2ACFE5CA001C3BBB = {
+			isa = PBXGroup;
+			children = (
+				AC5BDB1A2ACFE5CA001C3BBB /* MyAHGApp */,
+				AC5BDB2B2ACFE5CC001C3BBB /* MyAHGAppTests */,
+				AC5BDB352ACFE5CC001C3BBB /* MyAHGAppUITests */,
+				AC5BDB192ACFE5CA001C3BBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC5BDB192ACFE5CA001C3BBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BDB182ACFE5CA001C3BBB /* MyAHGApp.app */,
+				AC5BDB282ACFE5CC001C3BBB /* MyAHGAppTests.xctest */,
+				AC5BDB322ACFE5CC001C3BBB /* MyAHGAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC5BDB1A2ACFE5CA001C3BBB /* MyAHGApp */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */,
+				AC5BDB1D2ACFE5CA001C3BBB /* ContentView.swift */,
+				AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */,
+				AC5BDB212ACFE5CC001C3BBB /* Preview Content */,
+			);
+			path = MyAHGApp;
+			sourceTree = "<group>";
+		};
+		AC5BDB212ACFE5CC001C3BBB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BDB222ACFE5CC001C3BBB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC5BDB2B2ACFE5CC001C3BBB /* MyAHGAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BDB2C2ACFE5CC001C3BBB /* MyAHGAppTests.swift */,
+			);
+			path = MyAHGAppTests;
+			sourceTree = "<group>";
+		};
+		AC5BDB352ACFE5CC001C3BBB /* MyAHGAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BDB362ACFE5CC001C3BBB /* MyAHGAppUITests.swift */,
+				AC5BDB382ACFE5CC001C3BBB /* MyAHGAppUITestsLaunchTests.swift */,
+			);
+			path = MyAHGAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC5BDB172ACFE5CA001C3BBB /* MyAHGApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5BDB3C2ACFE5CC001C3BBB /* Build configuration list for PBXNativeTarget "MyAHGApp" */;
+			buildPhases = (
+				AC5BDB142ACFE5CA001C3BBB /* Sources */,
+				AC5BDB152ACFE5CA001C3BBB /* Frameworks */,
+				AC5BDB162ACFE5CA001C3BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyAHGApp;
+			productName = MyAHGApp;
+			productReference = AC5BDB182ACFE5CA001C3BBB /* MyAHGApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC5BDB272ACFE5CC001C3BBB /* MyAHGAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5BDB3F2ACFE5CC001C3BBB /* Build configuration list for PBXNativeTarget "MyAHGAppTests" */;
+			buildPhases = (
+				AC5BDB242ACFE5CC001C3BBB /* Sources */,
+				AC5BDB252ACFE5CC001C3BBB /* Frameworks */,
+				AC5BDB262ACFE5CC001C3BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5BDB2A2ACFE5CC001C3BBB /* PBXTargetDependency */,
+			);
+			name = MyAHGAppTests;
+			productName = MyAHGAppTests;
+			productReference = AC5BDB282ACFE5CC001C3BBB /* MyAHGAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC5BDB312ACFE5CC001C3BBB /* MyAHGAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5BDB422ACFE5CC001C3BBB /* Build configuration list for PBXNativeTarget "MyAHGAppUITests" */;
+			buildPhases = (
+				AC5BDB2E2ACFE5CC001C3BBB /* Sources */,
+				AC5BDB2F2ACFE5CC001C3BBB /* Frameworks */,
+				AC5BDB302ACFE5CC001C3BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5BDB342ACFE5CC001C3BBB /* PBXTargetDependency */,
+			);
+			name = MyAHGAppUITests;
+			productName = MyAHGAppUITests;
+			productReference = AC5BDB322ACFE5CC001C3BBB /* MyAHGAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC5BDB102ACFE5CA001C3BBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AC5BDB172ACFE5CA001C3BBB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AC5BDB272ACFE5CC001C3BBB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AC5BDB172ACFE5CA001C3BBB;
+					};
+					AC5BDB312ACFE5CC001C3BBB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AC5BDB172ACFE5CA001C3BBB;
+					};
+				};
+			};
+			buildConfigurationList = AC5BDB132ACFE5CA001C3BBB /* Build configuration list for PBXProject "MyAHGApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC5BDB0F2ACFE5CA001C3BBB;
+			productRefGroup = AC5BDB192ACFE5CA001C3BBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC5BDB172ACFE5CA001C3BBB /* MyAHGApp */,
+				AC5BDB272ACFE5CC001C3BBB /* MyAHGAppTests */,
+				AC5BDB312ACFE5CC001C3BBB /* MyAHGAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC5BDB162ACFE5CA001C3BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5BDB232ACFE5CC001C3BBB /* Preview Assets.xcassets in Resources */,
+				AC5BDB202ACFE5CC001C3BBB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5BDB262ACFE5CC001C3BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5BDB302ACFE5CC001C3BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC5BDB142ACFE5CA001C3BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5BDB1E2ACFE5CA001C3BBB /* ContentView.swift in Sources */,
+				AC5BDB1C2ACFE5CA001C3BBB /* MyAHGAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5BDB242ACFE5CC001C3BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5BDB2D2ACFE5CC001C3BBB /* MyAHGAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5BDB2E2ACFE5CC001C3BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5BDB392ACFE5CC001C3BBB /* MyAHGAppUITestsLaunchTests.swift in Sources */,
+				AC5BDB372ACFE5CC001C3BBB /* MyAHGAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC5BDB2A2ACFE5CC001C3BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5BDB172ACFE5CA001C3BBB /* MyAHGApp */;
+			targetProxy = AC5BDB292ACFE5CC001C3BBB /* PBXContainerItemProxy */;
+		};
+		AC5BDB342ACFE5CC001C3BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5BDB172ACFE5CA001C3BBB /* MyAHGApp */;
+			targetProxy = AC5BDB332ACFE5CC001C3BBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC5BDB3A2ACFE5CC001C3BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC5BDB3B2ACFE5CC001C3BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC5BDB3D2ACFE5CC001C3BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyAHGApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC5BDB3E2ACFE5CC001C3BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyAHGApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC5BDB402ACFE5CC001C3BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAHGApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyAHGApp";
+			};
+			name = Debug;
+		};
+		AC5BDB412ACFE5CC001C3BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAHGApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyAHGApp";
+			};
+			name = Release;
+		};
+		AC5BDB432ACFE5CC001C3BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyAHGApp;
+			};
+			name = Debug;
+		};
+		AC5BDB442ACFE5CC001C3BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyAHGApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC5BDB132ACFE5CA001C3BBB /* Build configuration list for PBXProject "MyAHGApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5BDB3A2ACFE5CC001C3BBB /* Debug */,
+				AC5BDB3B2ACFE5CC001C3BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5BDB3C2ACFE5CC001C3BBB /* Build configuration list for PBXNativeTarget "MyAHGApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5BDB3D2ACFE5CC001C3BBB /* Debug */,
+				AC5BDB3E2ACFE5CC001C3BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5BDB3F2ACFE5CC001C3BBB /* Build configuration list for PBXNativeTarget "MyAHGAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5BDB402ACFE5CC001C3BBB /* Debug */,
+				AC5BDB412ACFE5CC001C3BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5BDB422ACFE5CC001C3BBB /* Build configuration list for PBXNativeTarget "MyAHGAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5BDB432ACFE5CC001C3BBB /* Debug */,
+				AC5BDB442ACFE5CC001C3BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC5BDB102ACFE5CA001C3BBB /* Project object */;
+}
