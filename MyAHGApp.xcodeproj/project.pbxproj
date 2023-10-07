@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC5BDB1C2ACFE5CA001C3BBB /* MyAHGAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */; };
-		AC5BDB1E2ACFE5CA001C3BBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB1D2ACFE5CA001C3BBB /* ContentView.swift */; };
+		AC5BDB1E2ACFE5CA001C3BBB /* BuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */; };
 		AC5BDB202ACFE5CC001C3BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */; };
 		AC5BDB232ACFE5CC001C3BBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5BDB222ACFE5CC001C3BBB /* Preview Assets.xcassets */; };
 		AC5BDB2D2ACFE5CC001C3BBB /* MyAHGAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB2C2ACFE5CC001C3BBB /* MyAHGAppTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		AC5BDB182ACFE5CA001C3BBB /* MyAHGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAHGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAHGAppApp.swift; sourceTree = "<group>"; };
-		AC5BDB1D2ACFE5CA001C3BBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingView.swift; sourceTree = "<group>"; };
 		AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5BDB222ACFE5CC001C3BBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC5BDB282ACFE5CC001C3BBB /* MyAHGAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAHGAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */,
-				AC5BDB1D2ACFE5CA001C3BBB /* ContentView.swift */,
+				AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */,
 				AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */,
 				AC5BDB212ACFE5CC001C3BBB /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5BDB1E2ACFE5CA001C3BBB /* ContentView.swift in Sources */,
+				AC5BDB1E2ACFE5CA001C3BBB /* BuildingView.swift in Sources */,
 				AC5BDB1C2ACFE5CA001C3BBB /* MyAHGAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,9 +419,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyAHGApp/Preview Content\"";
+				DEVELOPMENT_TEAM = X5T6J374U9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -436,6 +438,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,9 +450,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyAHGApp/Preview Content\"";
+				DEVELOPMENT_TEAM = X5T6J374U9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -464,6 +469,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -477,6 +483,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5T6J374U9;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
@@ -496,6 +503,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5T6J374U9;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
@@ -514,6 +522,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5T6J374U9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGAppUITests;
@@ -531,6 +540,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X5T6J374U9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.edu.agh.kis.MyAHGAppUITests;
