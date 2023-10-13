@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-enum Status {
-    case limited
-    case yes
-}
-
 struct BuildingView: View {
     var imageName = "AGH"
     var buildingSymbol = "A-0"

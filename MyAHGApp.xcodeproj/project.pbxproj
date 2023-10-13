@@ -14,6 +14,8 @@
 		AC5BDB2D2ACFE5CC001C3BBB /* MyAHGAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB2C2ACFE5CC001C3BBB /* MyAHGAppTests.swift */; };
 		AC5BDB372ACFE5CC001C3BBB /* MyAHGAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB362ACFE5CC001C3BBB /* MyAHGAppUITests.swift */; };
 		AC5BDB392ACFE5CC001C3BBB /* MyAHGAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB382ACFE5CC001C3BBB /* MyAHGAppUITestsLaunchTests.swift */; };
+		AC9E74832AD91B7900A83C0B /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E74822AD91B7900A83C0B /* Building.swift */; };
+		AC9E74852AD9287A00A83C0B /* BuildingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E74842AD9287A00A83C0B /* BuildingCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		AC5BDB322ACFE5CC001C3BBB /* MyAHGAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAHGAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5BDB362ACFE5CC001C3BBB /* MyAHGAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAHGAppUITests.swift; sourceTree = "<group>"; };
 		AC5BDB382ACFE5CC001C3BBB /* MyAHGAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAHGAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC9E74822AD91B7900A83C0B /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		AC9E74842AD9287A00A83C0B /* BuildingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */,
 				AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */,
 				AC5BDB212ACFE5CC001C3BBB /* Preview Content */,
+				AC9E74822AD91B7900A83C0B /* Building.swift */,
+				AC9E74842AD9287A00A83C0B /* BuildingCardView.swift */,
 			);
 			path = MyAHGApp;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9E74852AD9287A00A83C0B /* BuildingCardView.swift in Sources */,
 				AC5BDB1E2ACFE5CA001C3BBB /* BuildingView.swift in Sources */,
+				AC9E74832AD91B7900A83C0B /* Building.swift in Sources */,
 				AC5BDB1C2ACFE5CA001C3BBB /* MyAHGAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
