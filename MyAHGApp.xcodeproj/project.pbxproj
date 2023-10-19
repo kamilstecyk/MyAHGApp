@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67A8DCA72AE1987A00FE3887 /* BuildingTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8DCA62AE1987A00FE3887 /* BuildingTheme.swift */; };
+		67A8DCA92AE19D7400FE3887 /* BuildingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8DCA82AE19D7400FE3887 /* BuildingType.swift */; };
+		67A8DCAB2AE1A45B00FE3887 /* BuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */; };
 		AC5BDB1C2ACFE5CA001C3BBB /* MyAHGAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */; };
 		AC5BDB1E2ACFE5CA001C3BBB /* BuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */; };
 		AC5BDB202ACFE5CC001C3BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67A8DCA62AE1987A00FE3887 /* BuildingTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingTheme.swift; sourceTree = "<group>"; };
+		67A8DCA82AE19D7400FE3887 /* BuildingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingType.swift; sourceTree = "<group>"; };
+		67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsView.swift; sourceTree = "<group>"; };
 		AC5BDB182ACFE5CA001C3BBB /* MyAHGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAHGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAHGAppApp.swift; sourceTree = "<group>"; };
 		AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingView.swift; sourceTree = "<group>"; };
@@ -75,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67A8DCA52AE1983000FE3887 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67A8DCA62AE1987A00FE3887 /* BuildingTheme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AC5BDB0F2ACFE5CA001C3BBB = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +112,15 @@
 		AC5BDB1A2ACFE5CA001C3BBB /* MyAHGApp */ = {
 			isa = PBXGroup;
 			children = (
+				67A8DCA52AE1983000FE3887 /* Models */,
 				AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */,
 				AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */,
 				AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */,
 				AC5BDB212ACFE5CC001C3BBB /* Preview Content */,
 				AC9E74822AD91B7900A83C0B /* Building.swift */,
 				AC9E74842AD9287A00A83C0B /* BuildingCardView.swift */,
+				67A8DCA82AE19D7400FE3887 /* BuildingType.swift */,
+				67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */,
 			);
 			path = MyAHGApp;
 			sourceTree = "<group>";
@@ -264,8 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9E74852AD9287A00A83C0B /* BuildingCardView.swift in Sources */,
+				67A8DCA92AE19D7400FE3887 /* BuildingType.swift in Sources */,
 				AC5BDB1E2ACFE5CA001C3BBB /* BuildingView.swift in Sources */,
+				67A8DCAB2AE1A45B00FE3887 /* BuildingsView.swift in Sources */,
 				AC9E74832AD91B7900A83C0B /* Building.swift in Sources */,
+				67A8DCA72AE1987A00FE3887 /* BuildingTheme.swift in Sources */,
 				AC5BDB1C2ACFE5CA001C3BBB /* MyAHGAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

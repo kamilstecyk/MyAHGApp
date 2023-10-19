@@ -11,13 +11,40 @@ struct BuildingCardView: View {
     let building: Building
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading){
+            Text(building.symbol).fontWeight(.heavy).font(.system(size: 22)).accessibilityAddTraits(.isHeader)
+            HStack{
+                Text(building.officialName)
+                
+                Spacer()
+                                
+                if building.hasWheelchairAccessibility == .limited {
+                    Image(systemName: "figure.roll")
+                        .foregroundColor(.gray)
+                        .font(.system(size: 25))
+                        .accessibility(label: Text("Wheelchair Icon"))
+                } else if building.hasWheelchairAccessibility == .yes {
+                    Image(systemName: "figure.roll")
+                        .foregroundColor(.black)
+                        .font(.system(size: 25)).accessibility(label: Text("Wheelchair Icon"))
+                }
+                
+                if building.hasWifi == .limited {
+                    Image(systemName: "wifi")
+                        .foregroundColor(.gray)
+                        .font(.system(size: 25)).accessibility(label: Text("Wi-Fi Icon"))
+                } else if building.hasWifi == .yes {
+                    Image(systemName: "wifi")
+                        .foregroundColor(.black)
+                        .font(.system(size: 25)).accessibility(label: Text("Wi-Fi Icon"))
+                }
+            }
+        }.padding().background(BuildingThemeManager.BackgroundColorForBuildingType(buildingType: building.buildingType))
     }
 }
 
 #Preview {
-    var sampleBuilding = Building.sampleBuildings[0]
-    BuildingCardView(building: sampleBuilding)
-        .background(Color.yellow)
+    BuildingCardView(building: Building.sampleBuildings[0])
         .previewLayout(.fixed(width: 400, height: 60))
 }
+

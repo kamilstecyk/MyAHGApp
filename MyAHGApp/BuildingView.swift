@@ -13,7 +13,8 @@ struct BuildingView: View {
     var buildingName: String? = "A-0"
     var street = "Mickiewicza 30"
     var buildingDescription = "To jest charakterystyczny budynek naszej pięknej uczelni, chyba każdy go zna i każdy w nim był chociaż raz."
-    var status: Status = .limited
+    var statusWheelchair: Status = .limited
+    var statusWifi: Status = .yes
     
     var body: some View {
         ScrollView{
@@ -33,15 +34,31 @@ struct BuildingView: View {
                         
                         Text(street).multilineTextAlignment(.center)
                     }.padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
+                    
                     Spacer()
-                    if status == .limited {
+                    
+                    if statusWheelchair == .limited {
                         Image(systemName: "figure.roll")
                             .foregroundColor(.gray)
                             .font(.system(size: 25))
-                    } else if status == .yes {
+                            .accessibility(label: Text("Wheelchair Icon"))
+                    } else if statusWheelchair == .yes {
                         Image(systemName: "figure.roll")
                             .foregroundColor(.black)
                             .font(.system(size: 25))
+                            .accessibility(label: Text("Wheelchair Icon"))
+                    }
+                    
+                    if statusWifi == .limited {
+                        Image(systemName: "wifi")
+                            .foregroundColor(.gray)
+                            .font(.system(size: 25))
+                            .accessibility(label: Text("Wi-Fi Icon"))
+                    } else if statusWifi == .yes {
+                        Image(systemName: "wifi")
+                            .foregroundColor(.black)
+                            .font(.system(size: 25))
+                            .accessibility(label: Text("Wi-Fi Icon"))
                     }
                 }.padding(10)
                 

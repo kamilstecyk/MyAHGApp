@@ -13,7 +13,8 @@ enum Status {
     case yes
 }
 
-struct Building {
+struct Building: Identifiable {
+    let id: UUID
     let symbol: String
     let officialName: String
     let photo: Data?
@@ -22,7 +23,21 @@ struct Building {
     let hasWifi: Status
     let hasWheelchairAccessibility: Status
     let shape: MKPolygon
-    let buildingType: String
+    let buildingType: BuildingType
+    
+    
+    init(id: UUID = UUID(), symbol: String, officialName: String, photo: Data?, address: String, characteristics: String, hasWifi: Status, hasWheelchairAccessibility: Status, shape: MKPolygon, buildingType: BuildingType) {
+        self.id = id
+        self.symbol = symbol
+        self.officialName = officialName
+        self.photo = photo
+        self.address = address
+        self.characteristics = characteristics
+        self.hasWifi = hasWifi
+        self.hasWheelchairAccessibility = hasWheelchairAccessibility
+        self.shape = shape
+        self.buildingType = buildingType
+    }
 }
 
 extension Building{
@@ -37,7 +52,7 @@ extension Building{
                 points.append(coordinate)
             }
             return MKPolygon(coordinates: &points, count: points.count)
-        }(), buildingType: "university"),
+        }(), buildingType: BuildingType.university),
         
         Building(symbol: "D-15", officialName: "Budynek D-15", photo: nil, address: "Nawojki 11", characteristics: "Cyfronet AGH", hasWifi: Status.yes, hasWheelchairAccessibility: Status.yes, shape: {
             let coordinates: [[Double]] = [[19.9088113,50.0689482],[19.9095192,50.0688447],[19.909557,50.0689519],[19.9095613,50.0689642],[19.9094081,50.0689866],[19.9088535,50.0690676],[19.9088113,50.0689482]]
@@ -49,6 +64,6 @@ extension Building{
                 points.append(coordinate)
             }
             return MKPolygon(coordinates: &points, count: points.count)
-        }(), buildingType: "university")
+        }(), buildingType: BuildingType.other)
     ]
 }
