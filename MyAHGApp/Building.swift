@@ -22,11 +22,12 @@ struct Building: Identifiable {
     let characteristics: String
     let hasWifi: Status
     let hasWheelchairAccessibility: Status
+    var isFavourite: Bool
     let shape: MKPolygon?
     let buildingType: BuildingType
     
     
-    init(id: UUID = UUID(), symbol: String, officialName: String, photo: Data?, address: String, characteristics: String, hasWifi: Status, hasWheelchairAccessibility: Status, shape: MKPolygon, buildingType: BuildingType) {
+    init(id: UUID = UUID(), symbol: String, officialName: String, photo: Data?, address: String, characteristics: String, hasWifi: Status, hasWheelchairAccessibility: Status, shape: MKPolygon, buildingType: BuildingType, isFavourite: Bool) {
         self.id = id
         self.symbol = symbol
         self.officialName = officialName
@@ -37,6 +38,7 @@ struct Building: Identifiable {
         self.hasWheelchairAccessibility = hasWheelchairAccessibility
         self.shape = shape
         self.buildingType = buildingType
+        self.isFavourite = isFavourite;
     }
 }
 
@@ -52,7 +54,7 @@ extension Building{
                 points.append(coordinate)
             }
             return MKPolygon(coordinates: &points, count: points.count)
-        }(), buildingType: BuildingType.university),
+        }(), buildingType: BuildingType.university, isFavourite: false),
         
         Building(symbol: "D-15", officialName: "Budynek D-15", photo: nil, address: "Nawojki 11", characteristics: "Cyfronet AGH", hasWifi: Status.yes, hasWheelchairAccessibility: Status.yes, shape: {
             let coordinates: [[Double]] = [[19.9088113,50.0689482],[19.9095192,50.0688447],[19.909557,50.0689519],[19.9095613,50.0689642],[19.9094081,50.0689866],[19.9088535,50.0690676],[19.9088113,50.0689482]]
@@ -64,6 +66,6 @@ extension Building{
                 points.append(coordinate)
             }
             return MKPolygon(coordinates: &points, count: points.count)
-        }(), buildingType: BuildingType.other)
+        }(), buildingType: BuildingType.other, isFavourite: true)
     ]
 }

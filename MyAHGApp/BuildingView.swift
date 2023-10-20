@@ -9,8 +9,8 @@ import SwiftUI
 
 struct BuildingView: View {
     var imageName = "AGH"
-    var building: Building
-    
+    @State var building: Building
+
     var body: some View {
         ScrollView{
             VStack {
@@ -19,8 +19,19 @@ struct BuildingView: View {
                         .resizable()
                         .aspectRatio(2/1, contentMode: .fit)
                 }
-                
-                Text("Budynek " + building.symbol).font(.system(size: 30, weight: .bold)).frame(maxWidth: .infinity, alignment: .leading).padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
+                HStack{
+                    Text("Budynek " + building.symbol).font(.system(size: 30, weight: .bold)).frame(maxWidth: .infinity, alignment: .leading).padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        self.building.isFavourite.toggle()
+                        }) {
+                            Image(systemName: self.building.isFavourite ? "heart.fill" : "heart")
+                                .font(.system(size: 30))
+                                .foregroundColor(self.building.isFavourite ? .red : .gray)
+                        }.padding(.trailing, 10).padding(.top, 5)
+                }
                 
                 HStack {
                     VStack(alignment: .leading) {

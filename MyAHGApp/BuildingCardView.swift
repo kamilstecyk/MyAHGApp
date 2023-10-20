@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct BuildingCardView: View {
-    let building: Building
+    var building: Building
     
     var body: some View {
         VStack(alignment: .leading){
-            Text(building.symbol).fontWeight(.heavy).font(.system(size: 22)).accessibilityAddTraits(.isHeader)
+            HStack(){
+                Text(building.symbol).fontWeight(.heavy).font(.system(size: 22)).accessibilityAddTraits(.isHeader)
+                
+                Spacer()
+                
+                Image(systemName: self.building.isFavourite ? "heart.fill" : "heart")
+                    .font(.system(size: 30))
+                    .foregroundColor(self.building.isFavourite ? .red : .gray)
+            }
             HStack{
                 Text(building.officialName)
                 

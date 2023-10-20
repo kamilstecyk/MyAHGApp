@@ -13,16 +13,16 @@ struct BuildingsView: View {
     var body: some View {
         NavigationStack{
             List(buildings) { building in
-                NavigationLink(destination: BuildingView(building: building)){
+                NavigationLink(destination: BuildingView(building: building)
+                    .navigationTitle("Szczegóły budynku")){
                     BuildingCardView(building: building)
                 }.listRowBackground(BuildingThemeManager.BackgroundColorForBuildingType(buildingType: building.buildingType))
             }
-            .navigationTitle("All buildings")
+            .navigationTitle("Wszystkie budynki")
         }
     }
 }
 
-//.navigationTitle("Szczególy budynku")
 #Preview {
     BuildingsView(buildings: Building.sampleBuildings)
 }
