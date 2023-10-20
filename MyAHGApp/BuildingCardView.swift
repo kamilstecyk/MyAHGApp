@@ -39,12 +39,13 @@ struct BuildingCardView: View {
                         .font(.system(size: 25)).accessibility(label: Text("Wi-Fi Icon"))
                 }
             }
-        }.padding().background(BuildingThemeManager.BackgroundColorForBuildingType(buildingType: building.buildingType))
+        }.padding()
     }
 }
 
 #Preview {
     BuildingCardView(building: Building.sampleBuildings[0])
         .previewLayout(.fixed(width: 400, height: 60))
+        .background(BuildingThemeManager.BackgroundColorForBuildingType(buildingType: Building.sampleBuildings[0].buildingType))
 }
 

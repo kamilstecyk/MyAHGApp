@@ -22,7 +22,7 @@ struct Building: Identifiable {
     let characteristics: String
     let hasWifi: Status
     let hasWheelchairAccessibility: Status
-    let shape: MKPolygon
+    let shape: MKPolygon?
     let buildingType: BuildingType
     
     
@@ -42,7 +42,7 @@ struct Building: Identifiable {
 
 extension Building{
     static let sampleBuildings: [Building] = [
-        Building(symbol: "D-9", officialName: "Budynek D-9", photo: nil, address: "Kawiory 40", characteristics: "Modern design", hasWifi: Status.limited, hasWheelchairAccessibility: Status.yes, shape: {
+        Building(symbol: "D-9", officialName: "Budynek D-9", photo: nil, address: "Kawiory 40", characteristics: "Bardzo nowoczesny budynek w infrastrukturze AGH. Zobacz go na mapie, a nastepnie odwiedz go osobiscie. Czekamy na Ciebie!", hasWifi: Status.limited, hasWheelchairAccessibility: Status.yes, shape: {
             let coordinates: [[Double]] = [[19.9095386,50.0678058],[19.9095019,50.0676912],[19.9101476,50.0675934],[19.9101869,50.0677089],[19.9095386,50.0678058]]
             var points = [CLLocationCoordinate2D]()
             for cordinate in coordinates{

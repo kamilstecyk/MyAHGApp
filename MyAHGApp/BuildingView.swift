@@ -9,12 +9,7 @@ import SwiftUI
 
 struct BuildingView: View {
     var imageName = "AGH"
-    var buildingSymbol = "A-0"
-    var buildingName: String? = "A-0"
-    var street = "Mickiewicza 30"
-    var buildingDescription = "To jest charakterystyczny budynek naszej pięknej uczelni, chyba każdy go zna i każdy w nim był chociaż raz."
-    var statusWheelchair: Status = .limited
-    var statusWifi: Status = .yes
+    var building: Building
     
     var body: some View {
         ScrollView{
@@ -25,36 +20,36 @@ struct BuildingView: View {
                         .aspectRatio(2/1, contentMode: .fit)
                 }
                 
-                Text("Budynek " + buildingSymbol).font(.system(size: 30, weight: .bold)).frame(maxWidth: .infinity, alignment: .leading).padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
+                Text("Budynek " + building.symbol).font(.system(size: 30, weight: .bold)).frame(maxWidth: .infinity, alignment: .leading).padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
                 
                 HStack {
                     VStack(alignment: .leading) {
-                        if let name = buildingName { Text(name).multilineTextAlignment(.center)
-                        }
+                        Text(building.officialName).multilineTextAlignment(.center)
                         
-                        Text(street).multilineTextAlignment(.center)
+                        
+                        Text(building.address).multilineTextAlignment(.center)
                     }.padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
                     
                     Spacer()
                     
-                    if statusWheelchair == .limited {
+                    if building.hasWheelchairAccessibility == .limited {
                         Image(systemName: "figure.roll")
                             .foregroundColor(.gray)
                             .font(.system(size: 25))
                             .accessibility(label: Text("Wheelchair Icon"))
-                    } else if statusWheelchair == .yes {
+                    } else if building.hasWheelchairAccessibility == .yes {
                         Image(systemName: "figure.roll")
                             .foregroundColor(.black)
                             .font(.system(size: 25))
                             .accessibility(label: Text("Wheelchair Icon"))
                     }
                     
-                    if statusWifi == .limited {
+                    if building.hasWifi == .limited {
                         Image(systemName: "wifi")
                             .foregroundColor(.gray)
                             .font(.system(size: 25))
                             .accessibility(label: Text("Wi-Fi Icon"))
-                    } else if statusWifi == .yes {
+                    } else if building.hasWifi == .yes {
                         Image(systemName: "wifi")
                             .foregroundColor(.black)
                             .font(.system(size: 25))
@@ -62,7 +57,7 @@ struct BuildingView: View {
                     }
                 }.padding(10)
                 
-                Text(buildingDescription).multilineTextAlignment(.center).lineLimit(4).padding(5)
+                Text(building.characteristics).multilineTextAlignment(.center).lineLimit(4).padding(5).font(.system(size: 14))
                 
                 Image(.aghMapa).resizable().aspectRatio(1/1, contentMode: .fit)
                     .padding()
@@ -73,5 +68,5 @@ struct BuildingView: View {
 }
 
 #Preview {
-    BuildingView()
+    BuildingView(building: Building.sampleBuildings[0])
 }

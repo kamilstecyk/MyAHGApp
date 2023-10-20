@@ -11,11 +11,18 @@ struct BuildingsView: View {
     let buildings: [Building]
     
     var body: some View {
-        List(buildings) { building in
-            BuildingCardView(building: building)}
+        NavigationStack{
+            List(buildings) { building in
+                NavigationLink(destination: BuildingView(building: building)){
+                    BuildingCardView(building: building)
+                }.listRowBackground(BuildingThemeManager.BackgroundColorForBuildingType(buildingType: building.buildingType))
+            }
+            .navigationTitle("All buildings")
+        }
     }
 }
 
+//.navigationTitle("Szczególy budynku")
 #Preview {
     BuildingsView(buildings: Building.sampleBuildings)
 }

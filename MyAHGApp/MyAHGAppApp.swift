@@ -11,7 +11,7 @@ import SwiftUI
 struct MyAHGAppApp: App {
     var body: some Scene {
         WindowGroup {
-            BuildingView()
+            BuildingsView(buildings: Building.sampleBuildings)
         }
     }
 }
