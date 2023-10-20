@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BuildingView: View {
     var imageName = "AGH"
-    @State var building: Building
+    @Binding var building: Building
 
     var body: some View {
         ScrollView{
@@ -79,5 +79,5 @@ struct BuildingView: View {
 }
 
 #Preview {
-    BuildingView(building: Building.sampleBuildings[0])
+    BuildingView(building: .constant(Building.sampleBuildings[0]))
 }

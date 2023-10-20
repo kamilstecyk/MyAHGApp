@@ -66,6 +66,19 @@ extension Building{
                 points.append(coordinate)
             }
             return MKPolygon(coordinates: &points, count: points.count)
-        }(), buildingType: BuildingType.other, isFavourite: true)
+        }(), buildingType: BuildingType.other, isFavourite: true),
+        
+        Building(symbol: "B-6", officialName: "Budynek B-6", photo: nil, address: "Aleja Adama Mickiewicza 30", characteristics: "Jest to jeden z uczelnianych budynków AGH.", hasWifi: Status.yes, hasWheelchairAccessibility: Status.limited, shape: {
+            let coordinates: [[Double]] = [[19.9164812,50.0663586],[19.9164024,50.0663772],[19.9163849,50.0663459],[19.9163046,50.066365],[19.9162148,50.0662058],[19.9164561,50.0661492],[19.9164805,50.0661928],[19.916468,50.0661956],[19.9165329,50.0663115],[19.9164638,50.0663273],[19.9164812,50.0663586]]
+            
+            var points = [CLLocationCoordinate2D]()
+            for cordinate in coordinates{
+                let latitude = cordinate[1]
+                let longitude = cordinate[0]
+                let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                points.append(coordinate)
+            }
+            return MKPolygon(coordinates: &points, count: points.count)
+        }(), buildingType: BuildingType.university, isFavourite: true)
     ]
 }

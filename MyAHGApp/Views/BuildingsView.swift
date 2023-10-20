@@ -8,21 +8,23 @@
 import SwiftUI
 
 struct BuildingsView: View {
-    let buildings: [Building]
+    @Binding var buildings: [Building]
     
     var body: some View {
         NavigationStack{
-            List(buildings) { building in
-                NavigationLink(destination: BuildingView(building: building)
-                    .navigationTitle("Szczegóły budynku")){
+            List($buildings) { $building in
+                NavigationLink(destination: BuildingView(building: $building)
+                    .navigationTitle("Szczegóły budynku")
+                    .navigationBarTitleDisplayMode(.inline)){
                     BuildingCardView(building: building)
                 }.listRowBackground(BuildingThemeManager.BackgroundColorForBuildingType(buildingType: building.buildingType))
             }
             .navigationTitle("Wszystkie budynki")
+            .navigationBarTitleDisplayMode(.inline) 
         }
     }
 }
 
 #Preview {
-    BuildingsView(buildings: Building.sampleBuildings)
+    BuildingsView(buildings: .constant(Building.sampleBuildings))
 }

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MyAHGAppApp: App {
+    @State private var buildings = Building.sampleBuildings
+    
     var body: some Scene {
         WindowGroup {
-            BuildingsView(buildings: Building.sampleBuildings)
+            BuildingsView(buildings: $buildings)
         }
     }
 }

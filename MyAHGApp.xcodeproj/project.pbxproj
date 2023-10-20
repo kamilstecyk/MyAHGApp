@@ -81,9 +81,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		670B8E162AE2CD95002793A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */,
+				AC9E74842AD9287A00A83C0B /* BuildingCardView.swift */,
+				67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		67A8DCA52AE1983000FE3887 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				67A8DCA82AE19D7400FE3887 /* BuildingType.swift */,
+				AC9E74822AD91B7900A83C0B /* Building.swift */,
 				67A8DCA62AE1987A00FE3887 /* BuildingTheme.swift */,
 			);
 			path = Models;
@@ -112,15 +124,11 @@
 		AC5BDB1A2ACFE5CA001C3BBB /* MyAHGApp */ = {
 			isa = PBXGroup;
 			children = (
+				670B8E162AE2CD95002793A4 /* Views */,
 				67A8DCA52AE1983000FE3887 /* Models */,
 				AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */,
-				AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */,
 				AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */,
 				AC5BDB212ACFE5CC001C3BBB /* Preview Content */,
-				AC9E74822AD91B7900A83C0B /* Building.swift */,
-				AC9E74842AD9287A00A83C0B /* BuildingCardView.swift */,
-				67A8DCA82AE19D7400FE3887 /* BuildingType.swift */,
-				67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */,
 			);
 			path = MyAHGApp;
 			sourceTree = "<group>";
