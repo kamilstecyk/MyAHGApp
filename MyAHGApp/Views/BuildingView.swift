@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct BuildingView: View {
     var imageName = "AGH"
@@ -101,6 +102,12 @@ struct BuildingView: View {
                 
                 Image(.aghMapa).resizable().aspectRatio(1/1, contentMode: .fit)
                     .padding()
+                
+                Map() {
+                    MapPolygon(building.shape)
+                            .stroke(.purple.opacity(0.7), lineWidth: 5)
+                            .foregroundStyle(.purple.opacity(0.7))
+                        }
             }
         }
         .padding()

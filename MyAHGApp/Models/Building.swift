@@ -28,7 +28,7 @@ struct Building: Identifiable {
     let hasWifi: Status
     let hasWheelchairAccessibility: Status
     var isFavourite: Bool
-    let shape: MKPolygon?
+    let shape: MKPolygon
     let buildingType: BuildingType
     
     let street: String
@@ -69,7 +69,7 @@ struct Building: Identifiable {
         self.houseNumber = ""
         self.postcode = ""
         self.city = ""
-        self.shape = nil
+        self.shape = MKPolygon()
     }
 }
 
@@ -170,7 +170,7 @@ extension Building: Encodable {
         
         try container.encode(buildingType, forKey: .type)
         
-        let encodedCoordinates = self.shape?.encodedCoordinates()
+        let encodedCoordinates = self.shape.encodedCoordinates()
         try container.encode(encodedCoordinates, forKey: .polygon)
     }
 }
