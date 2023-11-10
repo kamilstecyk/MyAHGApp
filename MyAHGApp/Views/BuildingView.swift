@@ -11,7 +11,7 @@ import MapKit
 struct BuildingView: View {
     var imageName = "AGH"
     @Binding var building: Building
-
+    
     var body: some View {
         GeometryReader { geometry in
             ScrollView{
@@ -69,7 +69,9 @@ struct BuildingView: View {
                             Text(building.officialName ?? "Brak oficjalnej nazwy").multilineTextAlignment(.center)
                             
                             
-                            Text(building.address).multilineTextAlignment(.center)
+                            Text(building.address.components(separatedBy: ",").first ?? " ").multilineTextAlignment(.center)
+                            
+                            Text(building.address.components(separatedBy: ",").last ?? " ").multilineTextAlignment(.center)
                         }.padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
                         
                         Spacer()
@@ -102,6 +104,7 @@ struct BuildingView: View {
                     Text(building.characteristics).multilineTextAlignment(.center).padding(5).font(.system(size: 14))
                     
                     Map() {
+                        UserAnnotation()
                         MapPolygon(building.shape)
                     }.frame(width: geometry.size.width, height: geometry.size.width)
                     
