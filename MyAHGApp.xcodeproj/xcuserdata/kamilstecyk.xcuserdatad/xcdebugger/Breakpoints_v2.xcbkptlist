@@ -14,8 +14,8 @@
             filePath = "MyAHGApp/Views/BuildingsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -280,9 +280,9 @@
             filePath = "MyAHGApp/Models/BuildingStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "save(buildings:)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "load()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -296,9 +296,9 @@
             filePath = "MyAHGApp/Models/BuildingStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "save(buildings:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "load()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -312,9 +312,9 @@
             filePath = "MyAHGApp/Models/BuildingStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "save(buildings:)"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "load()"
             landmarkType = "7">
             <Locations>
                <Location

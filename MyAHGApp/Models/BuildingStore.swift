@@ -37,14 +37,11 @@ class BuildingStore: ObservableObject {
                     guard let data = try? Data(contentsOf: fileURL) else {
                         return []
                     }
-                    
-                    print("Data from file:")
-                    print(data)
-                    
+                                        
                     let buildingsDecoded = try JSONDecoder().decode([Building].self, from: data)
                     
-                    print("Buildings decoded:")
-                    print(buildingsDecoded)
+                    print("Got decoded Buildings from file successfully!")
+//                    print(buildingsDecoded)
                     
                     return buildingsDecoded
                 } catch {
@@ -103,11 +100,36 @@ class BuildingStore: ObservableObject {
 
                 do {
                     let decodedData = try JSONDecoder().decode([Building].self, from: data)
-//                    print("Got decoded data: ", decodedData)
+                    print("Got decoded data initially from API successfully: ", decodedData)
                     completion(.success(decodedData))
                 } catch {
                     completion(.failure(error))
                 }
             }.resume()
         }
+    
+    func refreshDataFetchingFromAPI() -> Void {
+        guard let url = URL(string: "https://tools.sokoloowski.pl/pum-api/") else {
+            return
+        }
+
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
+            }
+
+            guard let data = data else {
+                print("No data received")
+                return
+            }
+
+            do {
+                let decodedData = try JSONDecoder().decode([Building].self, from: data)
+                self.buildings = decodedData
+                print("Got refreshed data from API successfully!");
+            } catch {
+            }
+        }.resume()
+    }
 }

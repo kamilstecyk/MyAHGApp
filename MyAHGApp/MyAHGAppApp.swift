@@ -30,6 +30,7 @@ struct MyAHGAppApp: App {
                         fatalError(error.localizedDescription)
                     }
                 }
+                .environmentObject(store)
         }
     }
 }

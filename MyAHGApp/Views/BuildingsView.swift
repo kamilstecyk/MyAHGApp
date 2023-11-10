@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct BuildingsView: View {
+    @EnvironmentObject var store: BuildingStore
     @Binding var buildings: [Building]
     @Environment(\.scenePhase) private var scenePhase
+    @State private var showingAlert = false
     let saveAction: ()->Void
     
     var body: some View {
@@ -23,6 +25,25 @@ struct BuildingsView: View {
             }
             .navigationTitle("Wszystkie budynki")
             .navigationBarTitleDisplayMode(.inline) 
+            .navigationBarItems(trailing:
+                            Button(action: {
+                                showingAlert = true
+                            }) {
+                                Image(systemName: "arrow.clockwise.circle.fill")
+                                    .font(.title)
+                            }
+                            .alert("Dane aplikacji zostaną zastąpione nowymi!", isPresented: $showingAlert) {
+                                Button("OK", role: .destructive) {
+                                    store.refreshDataFetchingFromAPI()
+                                    showingAlert = false
+                                    print("Refreshed data")
+                                }
+                                Button("Anuluj", role: .cancel) {
+                                    showingAlert = false
+                                    print("Alert cancelled")
+                                }
+                            }
+                        )
             .onChange(of: scenePhase) { phase in
                 if phase == .inactive { saveAction() }}
         }
