@@ -9,11 +9,27 @@ import SwiftUI
 
 @main
 struct MyAHGAppApp: App {
-    @State private var buildings = Building.sampleBuildings
+    @StateObject private var store = BuildingStore()
     
     var body: some Scene {
         WindowGroup {
-            BuildingsView(buildings: $buildings)
+            BuildingsView(buildings: $store.buildings)
+                {
+                    Task {
+                            do {
+                                try await store.save(buildings: store.buildings)
+                            } catch {
+                                fatalError(error.localizedDescription)
+                            }
+                            }
+                        }
+                .task {
+                    do {
+                        try await store.load()
+                    } catch {
+                        fatalError(error.localizedDescription)
+                    }
+                }
         }
     }
 }

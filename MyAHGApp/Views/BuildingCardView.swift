@@ -22,7 +22,9 @@ struct BuildingCardView: View {
                     .foregroundColor(self.building.isFavourite ? .red : .gray)
             }
             HStack{
-                Text(building.officialName)
+                
+                Text(building.officialName ?? "Brak oficjalnej nazwy")
+                
                 
                 Spacer()
                                 

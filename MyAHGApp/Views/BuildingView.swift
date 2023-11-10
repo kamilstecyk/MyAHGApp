@@ -14,11 +14,40 @@ struct BuildingView: View {
     var body: some View {
         ScrollView{
             VStack {
-                if let image = UIImage(named: imageName) {
-                    Image(uiImage: image)
-                        .resizable()
-                        .aspectRatio(2/1, contentMode: .fit)
+
+                if let imageURL = building.photo {
+                            AsyncImage(url: imageURL) { phase in
+                                switch phase {
+                                case .empty:
+                                    // Placeholder view while loading
+                                    ProgressView()
+                                case .success(let image):
+                                    // Successfully loaded image
+                                    image
+                                        .resizable()
+                                        .aspectRatio(2/1, contentMode: .fit)
+                                case .failure:
+                                    // Placeholder view on failure
+                                    Image(systemName: "photo")
+                                        .resizable()
+                                        .aspectRatio(2/1, contentMode: .fit)
+                                        .foregroundColor(.gray)
+                                @unknown default:
+                                    // Placeholder view for unknown cases
+                                    Image(systemName: "photo")
+                                        .resizable()
+                                        .aspectRatio(2/1, contentMode: .fit)
+                                        .foregroundColor(.gray)
+                                }
+                            }
+                        } else {
+                            // Placeholder view when URL is nil
+                            Image(systemName: "photo")
+                                .resizable()
+                                .aspectRatio(2/1, contentMode: .fit)
+                                .foregroundColor(.gray)
                 }
+                
                 HStack{
                     Text("Budynek " + building.symbol).font(.system(size: 30, weight: .bold)).frame(maxWidth: .infinity, alignment: .leading).padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
                     
@@ -35,7 +64,7 @@ struct BuildingView: View {
                 
                 HStack {
                     VStack(alignment: .leading) {
-                        Text(building.officialName).multilineTextAlignment(.center)
+                        Text(building.officialName ?? "Brak oficjalnej nazwy").multilineTextAlignment(.center)
                         
                         
                         Text(building.address).multilineTextAlignment(.center)

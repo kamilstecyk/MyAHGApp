@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F0FDECBC-260B-4452-AFA5-73A519251EBA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6B22C4B-A515-44DA-81E6-EA56230A0446"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAHGApp/Views/BuildingsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "508E4189-6D2D-4EAF-8A17-86AB8E121685"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAHGApp/MyAHGAppApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "508E4189-6D2D-4EAF-8A17-86AB8E121685 - ace2f00e6f47ab41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in MyAHGApp.MyAHGAppApp.body.getter : some"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/MyAHGAppApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "508E4189-6D2D-4EAF-8A17-86AB8E121685 - 36ba58b3d700f92e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in MyAHGApp.MyAHGAppApp.body.getter : some"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/MyAHGAppApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "508E4189-6D2D-4EAF-8A17-86AB8E121685 - 54388b489916674f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in MyAHGApp.MyAHGAppApp.body.getter : some"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/MyAHGAppApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "508E4189-6D2D-4EAF-8A17-86AB8E121685 - 47a558ebfe09814c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in MyAHGApp.MyAHGAppApp.body.getter : some"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/MyAHGAppApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A01EF1B7-1CE5-404F-95E4-895B35335E0E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAHGApp/Models/BuildingStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "load()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A01EF1B7-1CE5-404F-95E4-895B35335E0E - eb37b26ec80342d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "A01EF1B7-1CE5-404F-95E4-895B35335E0E - 2908e14a7e1bb25f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; Swift.Array&lt;MyAHGApp.Building&gt; in MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "A01EF1B7-1CE5-404F-95E4-895B35335E0E - b24fd8a0392ed680"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;MyAHGApp.Building&gt; in MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "A01EF1B7-1CE5-404F-95E4-895B35335E0E - eb37b26ec8034354"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "A01EF1B7-1CE5-404F-95E4-895B35335E0E - b24fd8a0392ed680"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;MyAHGApp.Building&gt; in MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "421239E8-1801-43EF-A12F-08122101F6F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAHGApp/Models/BuildingStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "load()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "421239E8-1801-43EF-A12F-08122101F6F4 - b24fd8a0392ed7c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;MyAHGApp.Building&gt; in MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "421239E8-1801-43EF-A12F-08122101F6F4 - b24fd8a0392ed7c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;MyAHGApp.Building&gt; in MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "584">
+               </Location>
+               <Location
+                  uuid = "421239E8-1801-43EF-A12F-08122101F6F4 - eb37b26ec8034354"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF1E8129-B2EB-4DA8-96FC-8D79F98949CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAHGApp/MyAHGAppApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51556CD6-3C43-427A-8856-2C2AD055A9BF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAHGApp/Models/BuildingStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "save(buildings:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BEB12561-E944-4ACF-BE89-E8BDAA92D994"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAHGApp/Models/BuildingStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "save(buildings:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B02795C-0F3D-46AD-8A30-1C2F0DE73677"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAHGApp/Models/BuildingStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "save(buildings:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9B02795C-0F3D-46AD-8A30-1C2F0DE73677 - 54b8e36ba3b97f10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MyAHGApp.BuildingStore.save(buildings: Swift.Array&lt;MyAHGApp.Building&gt;) async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "9B02795C-0F3D-46AD-8A30-1C2F0DE73677 - 836615656008e76c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; () in MyAHGApp.BuildingStore.save(buildings: Swift.Array&lt;MyAHGApp.Building&gt;) async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "9B02795C-0F3D-46AD-8A30-1C2F0DE73677 - e39f49bdedae6210"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyAHGApp.BuildingStore.save(buildings: Swift.Array&lt;MyAHGApp.Building&gt;) async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "9B02795C-0F3D-46AD-8A30-1C2F0DE73677 - 54b8e36ba3b97f73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MyAHGApp.BuildingStore.save(buildings: Swift.Array&lt;MyAHGApp.Building&gt;) async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "9B02795C-0F3D-46AD-8A30-1C2F0DE73677 - 7a93438cfde81cd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MyAHGApp.BuildingStore.save(buildings: Swift.Array&lt;MyAHGApp.Building&gt;) async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B464ABB3-6FDF-4FE0-BE21-3C51C721EE3D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAHGApp/Models/BuildingStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "load()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B464ABB3-6FDF-4FE0-BE21-3C51C721EE3D - b24fd8a0392ed788"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;MyAHGApp.Building&gt; in MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "944">
+               </Location>
+               <Location
+                  uuid = "B464ABB3-6FDF-4FE0-BE21-3C51C721EE3D - eb37b26ec8034429"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "B464ABB3-6FDF-4FE0-BE21-3C51C721EE3D - b24fd8a0392ed788"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;MyAHGApp.Building&gt; in MyAHGApp.BuildingStore.load() async throws -&gt; ()"
+                  moduleName = "MyAHGApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kamilstecyk/Desktop/MyAHGApp/MyAHGApp/Models/BuildingStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

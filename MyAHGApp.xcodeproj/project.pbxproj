@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		673213752AFD6922003E1CD9 /* BuildingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673213742AFD6922003E1CD9 /* BuildingStore.swift */; };
 		67A8DCA72AE1987A00FE3887 /* BuildingTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8DCA62AE1987A00FE3887 /* BuildingTheme.swift */; };
 		67A8DCA92AE19D7400FE3887 /* BuildingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8DCA82AE19D7400FE3887 /* BuildingType.swift */; };
 		67A8DCAB2AE1A45B00FE3887 /* BuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		673213742AFD6922003E1CD9 /* BuildingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingStore.swift; sourceTree = "<group>"; };
 		67A8DCA62AE1987A00FE3887 /* BuildingTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingTheme.swift; sourceTree = "<group>"; };
 		67A8DCA82AE19D7400FE3887 /* BuildingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingType.swift; sourceTree = "<group>"; };
 		67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				67A8DCA82AE19D7400FE3887 /* BuildingType.swift */,
 				AC9E74822AD91B7900A83C0B /* Building.swift */,
 				67A8DCA62AE1987A00FE3887 /* BuildingTheme.swift */,
+				673213742AFD6922003E1CD9 /* BuildingStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9E74852AD9287A00A83C0B /* BuildingCardView.swift in Sources */,
+				673213752AFD6922003E1CD9 /* BuildingStore.swift in Sources */,
 				67A8DCA92AE19D7400FE3887 /* BuildingType.swift in Sources */,
 				AC5BDB1E2ACFE5CA001C3BBB /* BuildingView.swift in Sources */,
 				67A8DCAB2AE1A45B00FE3887 /* BuildingsView.swift in Sources */,

@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-enum Status {
+enum Status: Codable {
     case limited
     case yes
 }
@@ -16,18 +16,40 @@ enum Status {
 struct Building: Identifiable {
     let id: UUID
     let symbol: String
-    let officialName: String
-    let photo: Data?
+    let officialName: String?
+    let photo: URL?
     let address: String
     let characteristics: String
     let hasWifi: Status
     let hasWheelchairAccessibility: Status
     var isFavourite: Bool
-    let shape: MKPolygon?
+//    let shape: MKPolygon?
     let buildingType: BuildingType
     
+    let street: String
+    let houseNumber: String
+    let postcode: String
+    let city: String
     
-    init(id: UUID = UUID(), symbol: String, officialName: String, photo: Data?, address: String, characteristics: String, hasWifi: Status, hasWheelchairAccessibility: Status, shape: MKPolygon, buildingType: BuildingType, isFavourite: Bool) {
+    enum CodingKeys: String, CodingKey {
+            case symbol
+            case name
+            case wifi
+            case wheelchair
+            case floors
+            case street
+            case houseNumber
+            case postcode
+            case city
+            case description
+            case type
+            case polygon
+            case imageURL
+            case isFavourite
+    }
+    
+    
+    init(id: UUID = UUID(), symbol: String, officialName: String, photo: URL?, address: String, characteristics: String, hasWifi: Status, hasWheelchairAccessibility: Status, shape: MKPolygon, buildingType: BuildingType, isFavourite: Bool) {
         self.id = id
         self.symbol = symbol
         self.officialName = officialName
@@ -36,9 +58,113 @@ struct Building: Identifiable {
         self.characteristics = characteristics
         self.hasWifi = hasWifi
         self.hasWheelchairAccessibility = hasWheelchairAccessibility
-        self.shape = shape
+//        self.shape = shape
         self.buildingType = buildingType
         self.isFavourite = isFavourite;
+        self.street = ""
+        self.houseNumber = ""
+        self.postcode = ""
+        self.city = ""
+    }
+}
+
+extension Building: Decodable {
+    init(from decoder: Decoder) throws {
+        self.id = UUID()
+        
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.symbol = try values.decode(String.self, forKey: .symbol)
+        
+        self.officialName = try? values.decode(String.self, forKey: .name);
+    
+        self.photo = try? values.decode(URL.self, forKey: .imageURL);
+        
+        self.street = try values.decode(String.self, forKey: .street)
+        self.houseNumber = try values.decode(String.self, forKey: .houseNumber)
+        self.postcode = try values.decode(String.self, forKey: .postcode)
+        self.city = try values.decode(String.self, forKey: .city)
+        
+        self.address = self.street + " " + self.houseNumber + " , " + self.postcode + " " + self.city
+        self.characteristics = try values.decode(String.self, forKey: .description)
+        self.hasWifi = try values.decode(Bool.self, forKey: .wifi) ? Status.yes : Status.limited
+        self.hasWheelchairAccessibility = try values.decode(String.self, forKey: .wheelchair) == "yes" ? Status.yes : Status.limited
+        
+// TODO mapping polygon to shape
+//        self.shape = shape
+        
+        var buildingType: BuildingType = BuildingType.other
+        
+        let buildingTypeString = try values.decode(String.self, forKey: .type)
+        
+        if(buildingTypeString == "university")
+        {
+            buildingType = BuildingType.university
+        }
+        else if(buildingTypeString == "dormitory")
+        {
+            buildingType = BuildingType.dormitory
+        }
+        else if(buildingTypeString == "library")
+        {
+            buildingType = BuildingType.library
+        }
+        else
+        {
+            buildingType = BuildingType.other
+        }
+        
+        self.buildingType = buildingType
+        
+        let isFav = try? values.decode(Bool.self, forKey: .isFavourite);
+        self.isFavourite = isFav ?? false
+    }
+}
+
+extension Building: Encodable {
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+
+        try container.encode(self.symbol, forKey: .symbol)
+        try container.encode(self.officialName, forKey: .name)
+        try container.encode(self.street, forKey: .street)
+        try container.encode(self.postcode, forKey: .postcode)
+        try container.encode(self.houseNumber, forKey: .houseNumber)
+        try container.encode(self.city, forKey: .city)
+        try container.encode(self.photo, forKey: .imageURL)
+        
+        let wifi = self.hasWifi == Status.yes
+        try container.encode(wifi, forKey: .wifi)
+        
+        let wheelchair = self.hasWheelchairAccessibility == Status.yes ? "yes" : "limited"
+        try container.encode(wheelchair, forKey: .wheelchair)
+        
+        try container.encode(self.characteristics, forKey: .description)
+        try container.encode(self.isFavourite, forKey: .isFavourite)
+        
+        var buildingType: String = ""
+                
+        if(self.buildingType == BuildingType.university)
+        {
+            buildingType = "university"
+        }
+        else if(self.buildingType == BuildingType.dormitory)
+        {
+            buildingType = "dormitory"
+        }
+        else if(self.buildingType == BuildingType.library)
+        {
+            buildingType = "library"
+        }
+        else
+        {
+            buildingType = "other"
+        }
+        
+        try container.encode(buildingType, forKey: .type)
+        
+        // TODO mapping polygon to shape
+        //        self.shape = shape
     }
 }
 
