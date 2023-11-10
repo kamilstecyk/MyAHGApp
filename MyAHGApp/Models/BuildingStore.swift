@@ -29,18 +29,33 @@ class BuildingStore: ObservableObject {
         print(fileURL)
         
         let task = Task<[Building], Error> {
-                    let fileURL = try Self.fileURL()
+            do {
+                    guard let fileURL = try? Self.fileURL() else {
+                        return []
+                    }
+                    
                     guard let data = try? Data(contentsOf: fileURL) else {
                         return []
                     }
-                    print("data from file")
+                    
+                    print("Data from file:")
                     print(data)
+                    
                     let buildingsDecoded = try JSONDecoder().decode([Building].self, from: data)
+                    
+                    print("Buildings decoded:")
                     print(buildingsDecoded)
+                    
                     return buildingsDecoded
+                } catch {
+                    print("Error: \(error)")
+                    return []
                 }
+        }
         
         let buildingsResults = try await task.value
+        
+//        let buildingsResults: [Building] = []
                 
         if(buildingsResults.isEmpty)
         {
@@ -88,7 +103,7 @@ class BuildingStore: ObservableObject {
 
                 do {
                     let decodedData = try JSONDecoder().decode([Building].self, from: data)
-                    print("Got decoded data: ", decodedData)
+//                    print("Got decoded data: ", decodedData)
                     completion(.success(decodedData))
                 } catch {
                     completion(.failure(error))

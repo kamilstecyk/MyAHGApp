@@ -13,6 +13,11 @@ enum Status: Codable {
     case yes
 }
 
+struct Coordinate: Codable {
+    var lat: CLLocationDegrees
+    var lon: CLLocationDegrees
+}
+
 struct Building: Identifiable {
     let id: UUID
     let symbol: String
@@ -23,7 +28,7 @@ struct Building: Identifiable {
     let hasWifi: Status
     let hasWheelchairAccessibility: Status
     var isFavourite: Bool
-//    let shape: MKPolygon?
+    let shape: MKPolygon?
     let buildingType: BuildingType
     
     let street: String
@@ -48,7 +53,6 @@ struct Building: Identifiable {
             case isFavourite
     }
     
-    
     init(id: UUID = UUID(), symbol: String, officialName: String, photo: URL?, address: String, characteristics: String, hasWifi: Status, hasWheelchairAccessibility: Status, shape: MKPolygon, buildingType: BuildingType, isFavourite: Bool) {
         self.id = id
         self.symbol = symbol
@@ -65,6 +69,7 @@ struct Building: Identifiable {
         self.houseNumber = ""
         self.postcode = ""
         self.city = ""
+        self.shape = nil
     }
 }
 
@@ -89,9 +94,6 @@ extension Building: Decodable {
         self.characteristics = try values.decode(String.self, forKey: .description)
         self.hasWifi = try values.decode(Bool.self, forKey: .wifi) ? Status.yes : Status.limited
         self.hasWheelchairAccessibility = try values.decode(String.self, forKey: .wheelchair) == "yes" ? Status.yes : Status.limited
-        
-// TODO mapping polygon to shape
-//        self.shape = shape
         
         var buildingType: BuildingType = BuildingType.other
         
@@ -118,6 +120,11 @@ extension Building: Decodable {
         
         let isFav = try? values.decode(Bool.self, forKey: .isFavourite);
         self.isFavourite = isFav ?? false
+        
+        let coordinatesResponse = try values.decode([Coordinate].self, forKey: .polygon)
+        let coordinate2DArray = coordinatesResponse.map { CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lon) }
+        let polygon = MKPolygon(coordinates: coordinate2DArray, count: coordinate2DArray.count)
+        self.shape = polygon
     }
 }
 
@@ -163,8 +170,8 @@ extension Building: Encodable {
         
         try container.encode(buildingType, forKey: .type)
         
-        // TODO mapping polygon to shape
-        //        self.shape = shape
+        let encodedCoordinates = self.shape?.encodedCoordinates()
+        try container.encode(encodedCoordinates, forKey: .polygon)
     }
 }
 
@@ -207,4 +214,23 @@ extension Building{
             return MKPolygon(coordinates: &points, count: points.count)
         }(), buildingType: BuildingType.university, isFavourite: true)
     ]
+}
+
+extension MKPolygon {
+    func encodedCoordinates() -> [Coordinate] {
+        var coordinates: [Coordinate] = []
+        
+        let pointCount = self.pointCount
+        
+        let pointsPointer = self.points()
+        
+        let buffer = UnsafeBufferPointer(start: pointsPointer, count: pointCount)
+        
+        coordinates = buffer.map { mapPoint in
+            let coordinate = mapPoint.coordinate
+            return Coordinate(lat: coordinate.latitude, lon: coordinate.longitude)
+        }
+        
+        return coordinates
+    }
 }
