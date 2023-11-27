@@ -13,24 +13,28 @@ struct MyAHGAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            BuildingsView(buildings: $store.buildings)
+            TabView{
+                BuildingsView(buildings: $store.buildings)
                 {
                     Task {
-                            do {
-                                try await store.save(buildings: store.buildings)
-                            } catch {
-                                fatalError(error.localizedDescription)
-                            }
-                            }
+                        do {
+                            try await store.save(buildings: store.buildings)
+                        } catch {
+                            fatalError(error.localizedDescription)
                         }
-                .task {
-                    do {
-                        try await store.load()
-                    } catch {
-                        fatalError(error.localizedDescription)
                     }
+                }.tabItem { Image(systemName: "building.2.fill") }
+                
+                BuildingsMapView(buildings: $store.buildings).tabItem { Image(systemName: "map.fill") }
+            }
+            .task {
+                do {
+                    try await store.load()
+                } catch {
+                    fatalError(error.localizedDescription)
                 }
-                .environmentObject(store)
+            }
+            .environmentObject(store)
         }
     }
 }

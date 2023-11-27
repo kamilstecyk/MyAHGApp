@@ -36,7 +36,7 @@ struct BuildingsView: View {
                                 Button("OK", role: .destructive) {
                                     store.refreshDataFetchingFromAPI()
                                     showingAlert = false
-                                    print("Refreshed data")
+                                    print("Refreshed data ")
                                 }
                                 Button("Anuluj", role: .cancel) {
                                     showingAlert = false

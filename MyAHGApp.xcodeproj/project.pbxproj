@@ -11,6 +11,7 @@
 		67A8DCA72AE1987A00FE3887 /* BuildingTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8DCA62AE1987A00FE3887 /* BuildingTheme.swift */; };
 		67A8DCA92AE19D7400FE3887 /* BuildingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8DCA82AE19D7400FE3887 /* BuildingType.swift */; };
 		67A8DCAB2AE1A45B00FE3887 /* BuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */; };
+		67D6A5D12B14A89D00BFC5B4 /* BuildingsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6A5D02B14A89D00BFC5B4 /* BuildingsMapView.swift */; };
 		AC5BDB1C2ACFE5CA001C3BBB /* MyAHGAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */; };
 		AC5BDB1E2ACFE5CA001C3BBB /* BuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */; };
 		AC5BDB202ACFE5CC001C3BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5BDB1F2ACFE5CC001C3BBB /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		67A8DCA62AE1987A00FE3887 /* BuildingTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingTheme.swift; sourceTree = "<group>"; };
 		67A8DCA82AE19D7400FE3887 /* BuildingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingType.swift; sourceTree = "<group>"; };
 		67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsView.swift; sourceTree = "<group>"; };
+		67D6A5D02B14A89D00BFC5B4 /* BuildingsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsMapView.swift; sourceTree = "<group>"; };
 		AC5BDB182ACFE5CA001C3BBB /* MyAHGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAHGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5BDB1B2ACFE5CA001C3BBB /* MyAHGAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAHGAppApp.swift; sourceTree = "<group>"; };
 		AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				AC5BDB1D2ACFE5CA001C3BBB /* BuildingView.swift */,
 				AC9E74842AD9287A00A83C0B /* BuildingCardView.swift */,
 				67A8DCAA2AE1A45B00FE3887 /* BuildingsView.swift */,
+				67D6A5D02B14A89D00BFC5B4 /* BuildingsMapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				67A8DCA92AE19D7400FE3887 /* BuildingType.swift in Sources */,
 				AC5BDB1E2ACFE5CA001C3BBB /* BuildingView.swift in Sources */,
 				67A8DCAB2AE1A45B00FE3887 /* BuildingsView.swift in Sources */,
+				67D6A5D12B14A89D00BFC5B4 /* BuildingsMapView.swift in Sources */,
 				AC9E74832AD91B7900A83C0B /* Building.swift in Sources */,
 				67A8DCA72AE1987A00FE3887 /* BuildingTheme.swift in Sources */,
 				AC5BDB1C2ACFE5CA001C3BBB /* MyAHGAppApp.swift in Sources */,
@@ -466,6 +470,8 @@
 				DEVELOPMENT_TEAM = X5T6J374U9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Your location is required for displaying it on the map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is required for displaying it on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -497,6 +503,8 @@
 				DEVELOPMENT_TEAM = X5T6J374U9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Your location is required for displaying it on the map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is required for displaying it on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
